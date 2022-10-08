@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Expense Tracker</title>
+    <link rel="stylesheet" href="expense.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1 id="exp">Expense Tracker</h1>
+        <hr>
+    </header>
+
+    <main>
+        <section class="container">
+            <form id="form" action=" index.js">
+                <div id="aaa">
+                    <label for="choose" style="margin-left:75px;">Choose a Category</label>
+                    <select name="choose" id="options">
+                        <option value="select">select</option>
+                        <option value="fuel">Fuel</option>
+                        <option value="food">Food</option>
+                        <option value="Internet Bill">Internet Bill</option>
+                        <option value="Phone Bill">Phone Bill</option>
+                        <option value="Room Rent">Room Rent</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="amount"> Expance Amount</label>
+                    <input id="amt" type="number" class="form control" placeholder="Required" required>
+                </div><br>
+                <div>
+                    <label for="Des">Expense Description</label>
+                    <input id="des" type="text" class="form control" placeholder="Text">
+                </div><br>
+                <div><button type="submit" class="submit" value="Submit">Submit</button></div>
+            </form>
+
+        </section>
+        <section class="list">
+            <ul id="expense"></ul>
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <section class="todo__section modal hidden">
+        <div class="todo__container">
+            <div id="aaa">
+                <label for="choose" style="margin-left:75px;">Choose a Category</label>
+                <select name="choose" id="edit_options">
+                    <option value="select">select</option>
+                    <option value="fuel">Fuel</option>
+                    <option value="food">Food</option>
+                    <option value="Internet Bill">Internet Bill</option>
+                    <option value="Phone Bill">Phone Bill</option>
+                    <option value="Room Rent">Room Rent</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                </select>
+            </div>
+            <div>
+                <label for="amount"> Expance Amount</label>
+                <input id="edit_amount" type="number" class="form control" placeholder="Required" required>
+            </div>
+            <div>
+                <label for="Des">Expense Description</label>
+                <input id="edit_description" type="text" class="form control" placeholder="Text">
+            </div>
+            <div><button class="edit">save</button></div>
+        </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <script src="expense.js"></script>
+</body>
+
+</html>
